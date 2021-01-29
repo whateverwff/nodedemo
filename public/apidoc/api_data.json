@@ -32,8 +32,57 @@
       }
     ],
     "version": "0.0.0",
-    "filename": "routes/api/workberch.js",
+    "filename": "routes/workberch.js",
     "groupTitle": "Home"
+  },
+  {
+    "type": "get",
+    "url": "/system/systemset",
+    "title": "系统设置",
+    "description": "<p>系统设置</p>",
+    "name": "systemset",
+    "group": "System",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "userId",
+            "description": "<p>用户id</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "result",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9918/home/systemset"
+      }
+    ],
+    "version": "0.0.0",
+    "filename": "routes/system.js",
+    "groupTitle": "System"
   },
   {
     "type": "get",
@@ -81,7 +130,7 @@
       }
     ],
     "version": "0.0.0",
-    "filename": "routes/api/users.js",
+    "filename": "routes/users.js",
     "groupTitle": "User"
   },
   {
@@ -137,7 +186,7 @@
       }
     ],
     "version": "0.0.0",
-    "filename": "routes/api/users.js",
+    "filename": "routes/users.js",
     "groupTitle": "User"
   }
 ]

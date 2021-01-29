@@ -1,5 +1,5 @@
 import express from "express";
-import Workberch from '../../controller/workberch/workberch'
+import Workberch from '../controller/workberch/workberch'
 
 const router = express.Router()
 

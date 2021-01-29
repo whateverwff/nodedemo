@@ -10,7 +10,7 @@ class User {
     /**
      * @author: wf
      * @createdate: 2021-01-28 17:33
-     * @mark: 
+     * @mark:
      */
     async login(req, res, next) {
         const user = await userModel.find()
