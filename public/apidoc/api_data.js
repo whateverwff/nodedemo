@@ -1,0 +1,143 @@
+define({ "api": [
+  {
+    "type": "get",
+    "url": "/home/getnoticelist",
+    "title": "获取通知列表",
+    "description": "<p>获取通知列表</p>",
+    "name": "getnoticelist",
+    "group": "Home",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "result",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9918/home/getnoticelist"
+      }
+    ],
+    "version": "0.0.0",
+    "filename": "routes/api/workberch.js",
+    "groupTitle": "Home"
+  },
+  {
+    "type": "get",
+    "url": "/user/list",
+    "title": "用户列表",
+    "description": "<p>用户列表</p>",
+    "name": "list",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "number",
+            "optional": false,
+            "field": "userId",
+            "description": "<p>用户ID</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "result",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9918/user/list"
+      }
+    ],
+    "version": "0.0.0",
+    "filename": "routes/api/users.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "get",
+    "url": "/user/login",
+    "title": "用户登录",
+    "description": "<p>用户登录</p>",
+    "name": "login",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "loginName",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "loginPass",
+            "description": "<p>密码</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "result",
+            "description": ""
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n    \"success\" : \"true\",\n    \"result\" : {\n        \"name\" : \"loginName\",\n        \"password\" : \"loginPass\"\n    }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9918/user/login"
+      }
+    ],
+    "version": "0.0.0",
+    "filename": "routes/api/users.js",
+    "groupTitle": "User"
+  }
+] });
